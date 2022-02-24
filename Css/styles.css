@@ -7,16 +7,16 @@
   /*font-family: "Montserrat", sans-serif;*/
   /*font-family: "Noto Sans", sans-serif;*/
   /*font-family: "Open Sans", sans-serif;*/
-  /*font-family: "Euclid A", sans-serif;*/
-  font-family: "Euclid B", sans-serif;
+  font-family: "Euclid A", sans-serif;
+  /*font-family: "Euclid B", sans-serif;*/
   /*font-family: "Poppins", sans-serif;*/
   /*font-family: "Raleway", sans-serif;*/
 }
 
 @font-face {
   font-family: Euclid A;
-  src: url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Medium.ttf"),
-    url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf");
+  src: url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf"),
+    url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Medium.ttf");
 }
 
 @font-face {
