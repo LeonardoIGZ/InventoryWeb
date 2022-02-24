@@ -24,3 +24,10 @@
   src: url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Regular.ttf"),
     url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Medium.ttf");
 }
+
+body{
+  background-color: #011931;
+  color: #ffffff;
+}
+
+
