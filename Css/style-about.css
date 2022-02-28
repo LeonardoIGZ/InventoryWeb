@@ -1,0 +1,35 @@
+header h2{
+    color: #fff;
+}
+
+header{
+    padding-bottom: 1em;
+    position: sticky;
+}
+
+.card-blue{
+    background-color: #0055ff;
+}
+
+main{
+    margin-top: 1em;
+    padding-bottom: 2em;
+}
+
+.title-shadow{
+    text-shadow: 4px 3px 0 #24242486;
+}
+
+#map{
+    width: 100%;
+}
+
+.card-color{
+    padding-top: 1.5em;
+    background-color: #0055ff4f;
+}
+
+.card-gray{
+    background-color: #d3e0ef;
+    color: #011931;
+}
