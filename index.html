@@ -68,7 +68,7 @@
 
     <main>
         <div id="caracteristicas2">
-            <div class="d-flex flex-equal w-100 my-md-3 ps-md-3">
+            <div class="d-flex flex-equal w-100 my-md-3 ps-md-3 flex-column flex-md-row">
                 <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden"
                     style="background-color: #FFFFFF;">
                     <div class="my-3 p-3 ">
@@ -143,12 +143,12 @@
 
         <div id="precios">
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center" id="pricing">
-                <h2 class="display-5 fw-normal">Elija el plan adecuado para su negocio</h2>
+                <h2 class="display-5 fw-normal pt-5 pb-3">Elija el plan adecuado para su negocio</h2>
             </div>
 
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-4 mb-4 text-center align-items-end">
-                    <div class="col">
+                    <div class="col p-4 px-md-3">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-free py-3">
                                 <h4 class="my-0 fw-normal text-dark">Gratuito</h4>
@@ -161,11 +161,11 @@
                                     <li class="text-muted">Soporte 24/7</li>
                                     <li class="text-muted">Integracion con APP</li>
                                 </ul>
-                                <button type="button" class="w-100 btn btn-lg btn-success">Empezar</button>
+                                <button type="button" class="w-100 btn btn-lg btn-secondary">Empezar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col p-4 px-md-3">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-free py-3 card-header-basic">
                                 <h4 class="my-0 fw-normal text-d3e0">Básico</h4>
@@ -180,11 +180,11 @@
                                     <li class="text-muted">Soporte 24/7</li>
                                     <li class="text-muted">Acceso a 1 API</li>
                                 </ul>
-                                <button type="button" class="w-100 btn btn-lg btn-success">Empezar</button>
+                                <button type="button" class="w-100 btn btn-lg btn-secondary">Empezar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col p-4 px-md-3">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-header-avanzado" id="recomendation">Recomendado</div>
                             <div class="card-header card-free py-3 card-header-avanzado">
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col p-4 px-md-3">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-free py-3 card-header-pro">
                                 <h4 class="my-0 fw-normal">Profesional</h4>
@@ -219,16 +219,16 @@
                                     <li class="text-muted">Soporte 24/7</li>
                                     <li class="text-muted">Soporte para APIs</li>
                                 </ul>
-                                <button type="button" class="w-100 btn btn-lg btn-success">Empezar</button>
+                                <button type="button" class="w-100 btn btn-lg btn-secondary">Empezar</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <h2 class="display-6 text-center mb-3">Comparar planes</h2>
+            <h2 class="display-6 text-center mb-3 pb-3">Comparar planes</h2>
 
-            <div class="table-responsive container mb-3">
+            <div class="table-responsive-sm container mb-3 pb-5">
                 <table class="table text-center text-light">
                     <thead>
                         <tr>
@@ -242,17 +242,17 @@
                     <tbody>
                         <tr>
                             <th scope="row" class="text-start">Soporte y chat en vivo</th>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Integraciones de Marketplace</th>
                             <td></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                     </tbody>
 
@@ -261,52 +261,51 @@
                             <th scope="row" class="text-start">Usuarios</th>
                             <td>Unico usuario</td>
                             <td>Hasta 2 Usuarios</td>
-                            <td>Hasta 5 Usuarios</td>
+                            <td class="table-active text-white">Hasta 5 Usuarios</td>
                             <td>Más de 5 Usuarios</i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Acceso a la API</th>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Importacion de ordenes</th>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Busqueda inteligente</th>
                             <td></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Descarga automatica de productos</th>
                             <td></td>
                             <td></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Seguridad extra</th>
                             <td></td>
                             <td></td>
-                            <td class="table-active"><i class="bi bi-check-lg check-arrow"></i></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td class="table-active"><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
                         <tr>
                             <th scope="row" class="text-start">Soporte de APIs</th>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td><i class="bi bi-check-lg check-arrow"></i></td>
+                            <td><i class="bi bi-check-lg check-arrow text-success fs-5"></i></td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -314,14 +313,14 @@
 
         <div id="soporte" style="background-color: #0055FF; background-image: url(Images/blob-haikei.svg); background-size: cover; background-position: center;" >
             <div class="container px-4 py-5" id="hanging-icons">
-                <h1 class=" pb-1 display-5" style="color: #ffffff;">Preguntas frecuentes</h1>
+                <h1 class="pb-1 display-5 text-center" style="color: #ffffff;">Preguntas frecuentes</h1>
                 <div class="row">
-                    <div class="col-6">
-                        <div class="d-flex justify-content-center pt-2">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center pt-2 pb-5">
                             <img src="Images/Questions-amico.svg" alt="" width="90%">
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="accordion accordion-flush mb-2 text-dark" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-headingOne">
@@ -480,7 +479,7 @@
         <div id="soporte2" style="background-color: #0055FF; background-image: url(Images/layered-waves-soporte2.svg); background-size: cover; background-position: center;">
             <div class="container px-4 pt-5" id="hanging-icons">
                 <h2 class="display-5 pb-1 text-center" style="color: #011931;">Temas Populares</h2>
-                <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3 text-dark">
+                <div class="row g-4 mt-2 row-cols-1 row-cols-lg-3 text-dark p-3 bg-light mb-5 mx-2 border rounded">
                     
                     <div class=" col d-flex align-items-start">
                         <div>
