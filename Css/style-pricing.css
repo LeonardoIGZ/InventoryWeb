@@ -7,10 +7,10 @@ header{
   background-color: #A7A9AC;
 }
 
-.bi-check-lg::before{
+/*.bi-check-lg::before{
   color: darkgreen !important;
   font-size: 1.5rem;
-}
+}*/
 
 /*
 .border-free {
