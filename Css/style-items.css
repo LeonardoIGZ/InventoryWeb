@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-table{
+    background-color: #D3E0EF;
+}
+
+.border-s{
+    border-left: 4px solid #0B5ED7;
+    border-right: none;
+    border-bottom: none;
+    border-top: none;
+}
