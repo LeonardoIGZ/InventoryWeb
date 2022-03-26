@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "Montserrat", sans-serif;*/
+    /*font-family: "Noto Sans", sans-serif;*/
+    /*font-family: "Open Sans", sans-serif;*/
+    font-family: "Euclid A", sans-serif;
+    /*font-family: "Euclid B", sans-serif;*/
+    /*font-family: "Poppins", sans-serif;*/
+    /*font-family: "Raleway", sans-serif;*/
+}
+
+@font-face {
+    font-family: Euclid A;
+    src: url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf"),
+        url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Medium.ttf");
+}
+
+@font-face {
+    font-family: Euclid B;
+    src: url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Regular.ttf"),
+        url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Medium.ttf");
+}
+
+body {
+    overflow: hidden;
+}
+
+.sidebar-container{
+    min-height: 100vh;
+}
+
+.sidebar-color{
+    background-color: #011931;
+    color: #ffffff;
+}
+
+.logo{
+    padding: .875rem 1.25rem;
+}
+
+.menu{
+    width: 18rem;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: #011931!important;
+    background-color: #ffffff;
+}
+
+.btn-search{
+    right: .5rem;
+}
+
+.avatar{
+    max-width: 40px;
+}
