@@ -1,6 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es" class="h-100">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,102 +16,85 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Self CSS-->
     <link rel="stylesheet" href="Css/style-items.css">
-    
-
-    <title>Hello, world!</title>
+    <title>Movimientos</title>
 </head>
-
 <body class="h-100" style="background-color: #011931;">
+    <header>
+        <div
+            class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <h2 class="m-0 fw-bold" style="color: #FFFFFF;"><img src="Images/northwindLogoUnico.png" width="25em" height="25em" class="pb-1"> Northwind</h2>
+            </a>
 
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#caracteristicas2" class="nav-link px-2 link-light">Caracteristicas</a></li>
+                <li><a href="#pricing" class="nav-link px-2 link-light">Planes y precios</a></li>
+                <li><a href="#soporte" class="nav-link px-2 link-light">FAQs</a></li>
+                <li><a href="about.html" class="nav-link px-2 link-light">Empresa</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Registrate</button>
+                <button type="button" class="btn btn-primary">Inicia sesión</button>
+            </div>
+
+        </div>
+    </header>
     <div class="h-100" style="background-color: #011931;">
-        <div class="" style="background-color: #011931; color: white;">
-            <h1 class="py-4 ps-4 border-bottom">Productos</h1>
-        </div>
-        <div class="d-flex flex-md-row flex-column mx-4 pt-3">
-            <div class="card mx-3 border-s mt-3 mt-md-0">
-                <div class="card-body">
-                    <div class="d-flex flex-row align-items-center">
-                        <div>
-                            <h2 class="fs-6 pb-2 text-primary">Productos totales</h2>
-                            <h2 class="fs-4">Cantidad de productos:</h2>
-                            <h2 class="">452</h2>
-                        </div>
-                        <i class="bi bi-archive-fill fs-1 ps-4 text-primary"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="card mx-3 border-s mt-3 mt-md-0">
-                <div class="card-body">
-                    <div class="d-flex flex-row align-items-center">
-                        <div>
-                            <h2 class="fs-6 pb-2 text-primary">Productos con más stock</h2>
-                            <h2 class="fs-4">Cantidad de productos:</h2>
-                            <h2 class="">452</h2>
-                        </div>
-                        <i class="bi bi-archive-fill fs-1 ps-4 text-primary"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="py-3 my-5 bg-light mx-5 px-3">
             <table id="example" class="table dt-responsive nowrap align-middle px-2">
+                <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#ModalAgregar">Agregar movimiento</button>
                 <thead>
                     <tr>
                         <th>Clave</th>
-                        <th>Producto</th>
-                        <th>Categoria</th>
-                        <th>Existencia</th>
-                        <th>Nivel de reorden</th>
-                        <th>Accion</th>
+                        <th>Fecha</th>
+                        <th>Tipo de movimiento</th>
+                        <th>Almacen</th>
+                        <th class="text-center">Operacion</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>0001</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>4</td>
+                        <td>01-01-2022</td>
+                        <td>Venta</td>
+                        <td>1</td>
                         <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal"><i
                                     class="bi bi-info-circle-fill text-white"></i></button></td>
                     </tr>
                     <tr>
-                        <td>0010</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>3</td>
-                        <td>9</td>
-                        <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"><i
-                                    class="bi bi-info-circle-fill text-white"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td>0100</td>
-                        <td>Junior Technical Author</td>
-                        <td>San Francisco</td>
-                        <td>66</td>
-                        <td>5</td>
-                        <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal"><i
-                                    class="bi bi-info-circle-fill text-white"></i></button></td>
-                    </tr>
-                    <tr>
-                        <td>1000</td>
-                        <td>Senior Javascript Developer</td>
-                        <td>Edinburgh</td>
-                        <td>22</td>
+                        <td>0002</td>
+                        <td>01-01-2022</td>
+                        <td>Compra</td>
                         <td>2</td>
                         <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal"><i
                                     class="bi bi-info-circle-fill text-white"></i></button></td>
                     </tr>
                     <tr>
-                        <td>9999</td>
-                        <td>Accountant</td>
-                        <td>Tokyo</td>
-                        <td>33</td>
-                        <td>1</td>
+                        <td>0003</td>
+                        <td>01-01-2022</td>
+                        <td>Ajuste</td>
+                        <td>3</td>
+                        <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i
+                                    class="bi bi-info-circle-fill text-white"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>0004</td>
+                        <td>01-01-2022</td>
+                        <td>Traspaso</td>
+                        <td>3-2</td>
+                        <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i
+                                    class="bi bi-info-circle-fill text-white"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>0005</td>
+                        <td>01-01-2022</td>
+                        <td>Compra</td>
+                        <td>2</td>
                         <td class="text-center"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal"><i
                                     class="bi bi-info-circle-fill text-white"></i></button></td>
@@ -121,44 +103,58 @@
             </table>
         </div>
     </div>
-
-    <div class="modal" tabindex="-1" id="exampleModal">
-        <div class="modal-dialog modal-lg">
+    <div class="modal" tabindex="-1" id="ModalAgregar">
+        <div class="modal-dialog modal-sm">
             <div class="modal-content ">
                 <div class="modal-header">
-                    <h5 class="modal-title">Detalles del producto</h5>
+                    <h5 class="modal-title ">Agregar Movimiento</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex flex-md-row flex-column justify-content-between">
                         <div class="card mx-3 border-s mt-3 mt-md-0">
                             <div class="card-body">
-                                <h2 class="fs-6 pb-2 text-primary">Productos en almacen</h2>
-                                <h2 class="fs-4">5 de Mayo #1567:</h2>
-                                <h2 class="text-success">25</h2>
-                            </div>
-                        </div>
-                        <div class="card mx-3 border-s mt-3 mt-md-0">
-                            <div class="card-body">
-                                <h2 class="fs-6 pb-2 text-primary">Productos en almacen</h2>
-                                <h2 class="fs-4">Puebla #45:</h2>
-                                <h2 class="text-warning">429</h2>
-                            </div>
-                        </div>
-                        <div class="card mx-3 border-s mt-3 mt-md-0">
-                            <div class="card-body">
-                                <h2 class="fs-6 pb-2 text-primary">Productos en almacen</h2>
-                                <h2 class="fs-4">Francisco I. Madero #13:</h2>
-                                <h2 class="text-danger">0</h2>
+                                <div class="form">
+                                    <label for="exampleInputPassword1">Fecha</label>
+                                    <input type="date" class="form-control mb-3" placeholder="dd-mm-yyyy">
+
+                                    <label for="exampleInputPassword1">Tipo de Movimiento</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option>Selecciona...</option>
+                                        <option>Compra</option>
+                                        <option>Venta</option>
+                                        <option>Ajuste</option>
+                                        <option>Traspaso</option>
+                                    </select>
+
+                                    <label for="exampleInputPassword1">Almacen Origen</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option>Selecciona...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                    
+                                    <label for="exampleInputPassword1">Almacen Destino</label>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option>Selecciona...</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Guardar movimiento</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="mt-5 bg-light text-center text-lg-start">
+    <footer class= "bg-light text-center text-lg-start">
         <div class="container p-4">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -240,9 +236,8 @@
     <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.min.js"></script>
     <!-- Self Script-->
-    <script src="js/main.js"></script>
+    <script src="js/movements.js"></script>
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/37647f28b4.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
