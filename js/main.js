@@ -2,14 +2,14 @@ $(document).ready(function () {
     $('#example').DataTable({
         columns: [
             { data: 'id' },
-            { data: 'product' },
+            { data: 'product', responsivePriority: '1'},
             { data: 'category' },
             { data: 'stock' },
             { data: 'level' },
             { data: 'action', orderable: false}
         ],
         "createdRow": function (row, data, dataIndex) {
-            if (data.level > data.stock) {
+            if (parseInt(data.level,10) > parseInt(data.stock,10)) {
                 $(row).addClass("bg-danger bg-opacity-25");
             }
         },
