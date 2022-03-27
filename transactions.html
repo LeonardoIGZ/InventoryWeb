@@ -43,14 +43,16 @@
                     </button>
                     <form class="d-flex align-items-center position-relative w-75">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-search position-absolute" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="btn btn-search position-absolute" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="Images/stone-cold-steve-austin-wwe.jpg" alt="" class=" rounded-circle avatar me-2">
+                                    <img src="Images/stone-cold-steve-austin-wwe.jpg" alt=""
+                                        class=" rounded-circle avatar me-2">
                                     Austin
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -66,6 +68,189 @@
                     </div>
                 </div>
             </nav>
+            <div class="h-100" style="background-color: #011931;">
+                <div class="" style="background-color: #011931; color: white;">
+                    <h1 class="py-4 ps-4 border-bottom">Productos</h1>
+                </div>
+                <div class="d-flex flex-md-row flex-column mx-4 pt-3">
+                    <div class="card mx-3 border-s mt-3 mt-md-0">
+                        <div class="card-body">
+                            <div class="d-flex flex-row align-items-center">
+                                <div>
+                                    <h2 class="fs-6 pb-2 text-primary">Productos totales</h2>
+                                    <h2 class="fs-4">Cantidad de productos:</h2>
+                                    <h2 class="">452</h2>
+                                </div>
+                                <i class="bi bi-archive-fill fs-1 ps-4 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-3 border-s mt-3 mt-md-0">
+                        <div class="card-body">
+                            <div class="d-flex flex-row align-items-center">
+                                <div>
+                                    <h2 class="fs-6 pb-2 text-primary">Productos con más stock</h2>
+                                    <h2 class="fs-4">Cantidad de productos:</h2>
+                                    <h2 class="">452</h2>
+                                </div>
+                                <i class="bi bi-archive-fill fs-1 ps-4 text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-3 my-5 bg-light mx-5 px-3">
+                    <table id="example" class="table dt-responsive nowrap align-middle px-2">
+                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+                            data-bs-target="#ModalAgregar">Agregar movimiento</button>
+                        <thead>
+                            <tr>
+                                <th>Clave</th>
+                                <th>Fecha</th>
+                                <th>Tipo de movimiento</th>
+                                <th>Almacen</th>
+                                <th class="text-center">Operacion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>0001</td>
+                                <td>01-01-2022</td>
+                                <td>Venta</td>
+                                <td>1</td>
+                                <td class="text-center"><button type="button" class="btn btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td>0002</td>
+                                <td>01-01-2022</td>
+                                <td>Compra</td>
+                                <td>2</td>
+                                <td class="text-center"><button type="button" class="btn btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
+                            </tr>
+                            <tr>
+                                <td>0003</td>
+                                <td>01-01-2022</td>
+                                <td>Ajuste</td>
+                                <td>3</td>
+                                <td class="text-center"><button type="button" class="btn btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
+                            </tr>
+                            <tr>
+                                <td>0004</td>
+                                <td>01-01-2022</td>
+                                <td>Traspaso</td>
+                                <td>3-2</td>
+                                <td class="text-center"><button type="button" class="btn btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
+                            </tr>
+                            <tr>
+                                <td>0005</td>
+                                <td>01-01-2022</td>
+                                <td>Compra</td>
+                                <td>2</td>
+                                <td class="text-center"><button type="button" class="btn btn-primary"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal" tabindex="-1" id="ModalAgregar">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h5 class="modal-title ">Agregar Movimiento</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex flex-md-row flex-column justify-content-between">
+                                <div class="card mx-3 border-s mt-3 mt-md-0">
+                                    <div class="card-body">
+                                        <div class="form">
+                                            <label for="exampleInputPassword1">Fecha</label>
+                                            <input type="date" class="form-control mb-3" placeholder="dd-mm-yyyy">
+
+                                            <label for="exampleInputPassword1">Tipo de Movimiento</label>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option>Selecciona...</option>
+                                                <option>Compra</option>
+                                                <option>Venta</option>
+                                                <option>Ajuste</option>
+                                                <option>Traspaso</option>
+                                            </select>
+
+                                            <label for="exampleInputPassword1">Almacen Origen</label>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option>Selecciona...</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+
+                                            <label for="exampleInputPassword1">Almacen Destino</label>
+                                            <select class="form-select mb-3" aria-label="Default select example">
+                                                <option>Selecciona...</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Guardar movimiento</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="bg-light text-center text-lg-start">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h5 class="text-uppercase">Contactos</h5>
+                            <h6>Tel. 4451011851</h6>
+                            <h6>Correo. inventarios@northwind.com.mx</h6>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-items-end">
+                            <h5 class="text-uppercase">Redes</h5>
+                            <div class="container p-0 pb-0">
+                                <!-- Section: Social media -->
+                                <section class="mb-1">
+                                    <!-- Facebook -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"
+                                        href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                                    <!-- Twitter -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;"
+                                        href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+                                    <!-- Google -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;"
+                                        href="#!" role="button"><i class="fab fa-google"></i></a>
+
+                                    <!-- Instagram -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;"
+                                        href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                                    <!-- Github -->
+                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;"
+                                        href="#!" role="button"><i class="fab fa-github"></i></a>
+                                </section>
+                                <!-- Section: Social media -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                    © 2022 Copyright:
+                    <a class="text-dark" href="">northwind.com.mx</a>
+                </div>
+            </footer>
         </div>
     </div>
 
@@ -77,6 +262,15 @@
         crossorigin="anonymous"></script>
     <script src="js/transactions.js"></script>
     <script src="https://kit.fontawesome.com/37647f28b4.js" crossorigin="anonymous"></script>
+    <!-- Datatable Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.4/js/dataTables.select.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/responsive.bootstrap5.min.js"></script>
+    <!-- Self Script-->
+    <script src="js/movements.js"></script>
 </body>
 
 </html>

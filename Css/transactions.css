@@ -24,7 +24,6 @@
 }
 
 body {
-    overflow: hidden;
 }
 
 .sidebar-container{
@@ -58,5 +57,5 @@ body {
 }
 
 .avatar{
-    max-width: 40px;
+    max-width: 35px;
 }
