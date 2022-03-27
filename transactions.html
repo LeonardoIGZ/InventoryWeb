@@ -16,7 +16,7 @@
 
 <body>
 
-    <div class="d-flex">
+    <div class="d-flex w-100">
         <div class="sidebar-container sidebar-color">
             <div class="logo">
                 <h2 class="m-0 fw-bold" style="color: #FFFFFF;"><img src="Images/northwindLogoUnico.png" width="25em"
@@ -33,7 +33,7 @@
                 <a href="" class="d-block p-3 text-white"><i class="fa-solid fa-gear me-2 lead"></i> Configuración</a>
             </div>
         </div>
-        <div class="w-100">
+        <div class=" w-100">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -68,191 +68,222 @@
                     </div>
                 </div>
             </nav>
-            <div class="h-100" style="background-color: #011931;">
-                <div class="" style="background-color: #011931; color: white;">
-                    <h1 class="py-4 ps-4 border-bottom">Productos</h1>
-                </div>
-                <div class="d-flex flex-md-row flex-column mx-4 pt-3">
-                    <div class="card mx-3 border-s mt-3 mt-md-0">
-                        <div class="card-body">
-                            <div class="d-flex flex-row align-items-center">
-                                <div>
-                                    <h2 class="fs-6 pb-2 text-primary">Productos totales</h2>
-                                    <h2 class="fs-4">Cantidad de productos:</h2>
-                                    <h2 class="">452</h2>
-                                </div>
-                                <i class="bi bi-archive-fill fs-1 ps-4 text-primary"></i>
+            <div class="content">
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <h1 class="fw-bold mb-0">Bienvenido Austin</h1>
+                                <p class="lead text-muted">Revisa la ultima información de movimientos</p>
+                            </div>
+                            <div class="col-lg-3">
+
                             </div>
                         </div>
                     </div>
-                    <div class="card mx-3 border-s mt-3 mt-md-0">
-                        <div class="card-body">
-                            <div class="d-flex flex-row align-items-center">
-                                <div>
-                                    <h2 class="fs-6 pb-2 text-primary">Productos con más stock</h2>
-                                    <h2 class="fs-4">Cantidad de productos:</h2>
-                                    <h2 class="">452</h2>
+                    <div class="d-flex flex-md-row flex-column mx-4 pt-3">
+                        <div class="card mx-3 border-s mt-3 mt-md-0">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div>
+                                        <h2 class="fs-6 pb-2 text-primary">Productos totales</h2>
+                                        <h2 class="fs-5">Cantidad de productos:</h2>
+                                        <h2 class="fs-3 fw-bold">452</h2>
+                                    </div>
+                                    <i class="bi bi-archive-fill fs-1 ps-4 text-primary d-none d-md-block"></i>
                                 </div>
-                                <i class="bi bi-archive-fill fs-1 ps-4 text-primary"></i>
+                            </div>
+                        </div>
+                        <div class="card mx-3 border-s mt-3 mt-md-0">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div>
+                                        <h2 class="fs-6 pb-2 text-primary">Producto con más stock</h2>
+                                        <h2 class="fs-5">System Architect:</h2>
+                                        <h2 class="fs-3 fw-bold">61</h2>
+                                    </div>
+                                    <i class="bi bi-archive-fill fs-1 ps-4 text-primary d-none d-md-block"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mx-3 border-s mt-3 mt-md-0">
+                            <div class="card-body">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div>
+                                        <h2 class="fs-6 pb-2 text-primary">Almacenes totales</h2>
+                                        <h2 class="fs-5">Almacenes vinculados:</h2>
+                                        <h2 class="fs-3 fw-bold">4</h2>
+                                    </div>
+                                    <i class="bi bi-archive-fill fs-1 ps-4 text-primary d-none d-md-block"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+                <div >
+                    <div class="py-3 my-5 bg-light mx-5 px-3">
+                        <table id="example" class="table dt-responsive nowrap align-middle px-2">
+                            <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
+                                data-bs-target="#ModalAgregar">Agregar movimiento</button>
+                            <thead>
+                                <tr>
+                                    <th>Clave</th>
+                                    <th>Fecha</th>
+                                    <th>Tipo de movimiento</th>
+                                    <th>Almacen</th>
+                                    <th class="text-center">Operacion</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>0001</td>
+                                    <td>01-01-2022</td>
+                                    <td>Venta</td>
+                                    <td>1</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-circle-info"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>0002</td>
+                                    <td>01-01-2022</td>
+                                    <td>Compra</td>
+                                    <td>2</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-circle-info"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>0003</td>
+                                    <td>01-01-2022</td>
+                                    <td>Ajuste</td>
+                                    <td>3</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-circle-info"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>0004</td>
+                                    <td>01-01-2022</td>
+                                    <td>Traspaso</td>
+                                    <td>3-2</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-circle-info"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>0005</td>
+                                    <td>01-01-2022</td>
+                                    <td>Compra</td>
+                                    <td>2</td>
+                                    <td class="text-center"><button type="button" class="btn btn-primary"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                class="fa-solid fa-circle-info"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <div class="py-3 my-5 bg-light mx-5 px-3">
-                    <table id="example" class="table dt-responsive nowrap align-middle px-2">
-                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal"
-                            data-bs-target="#ModalAgregar">Agregar movimiento</button>
-                        <thead>
-                            <tr>
-                                <th>Clave</th>
-                                <th>Fecha</th>
-                                <th>Tipo de movimiento</th>
-                                <th>Almacen</th>
-                                <th class="text-center">Operacion</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>0001</td>
-                                <td>01-01-2022</td>
-                                <td>Venta</td>
-                                <td>1</td>
-                                <td class="text-center"><button type="button" class="btn btn-primary"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></i></button></td>
-                            </tr>
-                            <tr>
-                                <td>0002</td>
-                                <td>01-01-2022</td>
-                                <td>Compra</td>
-                                <td>2</td>
-                                <td class="text-center"><button type="button" class="btn btn-primary"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
-                            </tr>
-                            <tr>
-                                <td>0003</td>
-                                <td>01-01-2022</td>
-                                <td>Ajuste</td>
-                                <td>3</td>
-                                <td class="text-center"><button type="button" class="btn btn-primary"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
-                            </tr>
-                            <tr>
-                                <td>0004</td>
-                                <td>01-01-2022</td>
-                                <td>Traspaso</td>
-                                <td>3-2</td>
-                                <td class="text-center"><button type="button" class="btn btn-primary"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
-                            </tr>
-                            <tr>
-                                <td>0005</td>
-                                <td>01-01-2022</td>
-                                <td>Compra</td>
-                                <td>2</td>
-                                <td class="text-center"><button type="button" class="btn btn-primary"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-circle-info"></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="modal" tabindex="-1" id="ModalAgregar">
-                <div class="modal-dialog modal-sm">
-                    <div class="modal-content ">
-                        <div class="modal-header">
-                            <h5 class="modal-title ">Agregar Movimiento</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="d-flex flex-md-row flex-column justify-content-between">
-                                <div class="card mx-3 border-s mt-3 mt-md-0">
-                                    <div class="card-body">
-                                        <div class="form">
-                                            <label for="exampleInputPassword1">Fecha</label>
-                                            <input type="date" class="form-control mb-3" placeholder="dd-mm-yyyy">
+                <div class="modal" tabindex="-1" id="ModalAgregar">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h5 class="modal-title ">Agregar Movimiento</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="d-flex flex-md-row flex-column justify-content-between">
+                                    <div class="card mx-3 border-s mt-3 mt-md-0">
+                                        <div class="card-body">
+                                            <div class="form">
+                                                <label for="exampleInputPassword1">Fecha</label>
+                                                <input type="date" class="form-control mb-3" placeholder="dd-mm-yyyy">
 
-                                            <label for="exampleInputPassword1">Tipo de Movimiento</label>
-                                            <select class="form-select mb-3" aria-label="Default select example">
-                                                <option>Selecciona...</option>
-                                                <option>Compra</option>
-                                                <option>Venta</option>
-                                                <option>Ajuste</option>
-                                                <option>Traspaso</option>
-                                            </select>
+                                                <label for="exampleInputPassword1">Tipo de Movimiento</label>
+                                                <select class="form-select mb-3" aria-label="Default select example">
+                                                    <option>Selecciona...</option>
+                                                    <option>Compra</option>
+                                                    <option>Venta</option>
+                                                    <option>Ajuste</option>
+                                                    <option>Traspaso</option>
+                                                </select>
 
-                                            <label for="exampleInputPassword1">Almacen Origen</label>
-                                            <select class="form-select mb-3" aria-label="Default select example">
-                                                <option>Selecciona...</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
+                                                <label for="exampleInputPassword1">Almacen Origen</label>
+                                                <select class="form-select mb-3" aria-label="Default select example">
+                                                    <option>Selecciona...</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
 
-                                            <label for="exampleInputPassword1">Almacen Destino</label>
-                                            <select class="form-select mb-3" aria-label="Default select example">
-                                                <option>Selecciona...</option>
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                            </select>
+                                                <label for="exampleInputPassword1">Almacen Destino</label>
+                                                <select class="form-select mb-3" aria-label="Default select example">
+                                                    <option>Selecciona...</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-primary">Guardar movimiento</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer class="bg-light text-center text-lg-start">
-                <div class="container p-4">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                            <h5 class="text-uppercase">Contactos</h5>
-                            <h6>Tel. 4451011851</h6>
-                            <h6>Correo. inventarios@northwind.com.mx</h6>
-                        </div>
-                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-items-end">
-                            <h5 class="text-uppercase">Redes</h5>
-                            <div class="container p-0 pb-0">
-                                <!-- Section: Social media -->
-                                <section class="mb-1">
-                                    <!-- Facebook -->
-                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;"
-                                        href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
-                                    <!-- Twitter -->
-                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;"
-                                        href="#!" role="button"><i class="fab fa-twitter"></i></a>
-
-                                    <!-- Google -->
-                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;"
-                                        href="#!" role="button"><i class="fab fa-google"></i></a>
-
-                                    <!-- Instagram -->
-                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;"
-                                        href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
-                                    <!-- Github -->
-                                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;"
-                                        href="#!" role="button"><i class="fab fa-github"></i></a>
-                                </section>
-                                <!-- Section: Social media -->
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Guardar movimiento</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                    © 2022 Copyright:
-                    <a class="text-dark" href="">northwind.com.mx</a>
-                </div>
-            </footer>
+            </div>
         </div>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contactos</h5>
+                    <h6>Tel. 4451011851</h6>
+                    <h6>Correo. inventarios@northwind.com.mx</h6>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0 align-items-end">
+                    <h5 class="text-uppercase">Redes</h5>
+                    <div class="container p-0 pb-0">
+                        <!-- Section: Social media -->
+                        <section class="mb-1">
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                                role="button"><i class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                                role="button"><i class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                                role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                                role="button"><i class="fab fa-instagram"></i></a>
+
+                            <!-- Github -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+                                role="button"><i class="fab fa-github"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="">northwind.com.mx</a>
+        </div>
+    </footer>
+
 
 
 
