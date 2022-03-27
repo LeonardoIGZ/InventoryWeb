@@ -1,10 +1,13 @@
 $(document).ready(function () {
-    $('#example').DataTable({
+    $('#products').DataTable({
         columns: [
             { data: 'id' },
             { data: 'product', responsivePriority: '1'},
             { data: 'category' },
             { data: 'stock' },
+            { data: 'warehouse1'},
+            { data: 'warehouse2'},
+            { data: 'warehouse3'},
             { data: 'level' },
             { data: 'action', orderable: false}
         ],
