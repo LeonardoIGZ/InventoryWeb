@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@font-face {
+  font-family: Euclid A;
+  src: url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf"),
+    url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Medium.ttf");
+}
+
+@font-face {
+  font-family: Euclid B;
+  src: url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Regular.ttf"),
+    url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Medium.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,35 +25,73 @@
   /*font-family: "Raleway", sans-serif;*/
 }
 
-@font-face {
-  font-family: Euclid A;
-  src: url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf"),
-    url("../Fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Medium.ttf");
-}
-
-@font-face {
-  font-family: Euclid B;
-  src: url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Regular.ttf"),
-    url("../Fonts/euclid-circular-b-cufonfonts/Euclid\ Circular\ B\ Medium.ttf");
-}
-
-body{
+body {
   background-color: #011931;
   color: #ffffff;
-
 }
 
-.caracteristicas-fondo{
-  background-image: url(Images/pickawood-6tAIO3pxde4-unsplash.jpg); 
-  background-position: bottom; 
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255);
+}
+
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-toggler {
+  color: #0055ff !important;
+  border-color: #0055ff !important;
+}
+
+.startView {
+  background-image: url(/Images/test5.svg);
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-primary {
+  background-color: #0055ff;
+  color: #fff;
+  border-color: #0055ff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #0044cc;
+  color: #fff;
+  border-color: #0044cc;
+}
+
+.btn-outline-primary {
+  color: #0055ff;
+  border-color: #0055ff;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.open .dropdown-toggle.btn-outline-primary {
+  background-color: #0044cc;
+  color: #fff;
+  border-color: #0044cc;
+}
+
+.caracteristicas-fondo {
+  background-image: url(Images/pickawood-6tAIO3pxde4-unsplash.jpg);
+  background-position: bottom;
   background-size: 50%;
 }
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
- .product-device {
+.product-device {
   position: absolute;
   right: 10%;
   bottom: -30%;
@@ -59,7 +109,7 @@ body{
   bottom: 10%;
   left: 10px;
   content: "";
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }
 
@@ -74,8 +124,49 @@ body{
 .flex-equal > * {
   flex: 1;
 }
+
 @media (min-width: 768px) {
   .flex-md-equal > * {
     flex: 1;
+  }
+  .navbar-brand.abs {
+    position: absolute;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    background-color: #0044cc;
+    color: #fff;
+    border-color: #0044cc;
+  }
+  
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .open .dropdown-toggle.btn-primary {
+    background-color: #00308F;
+    color: #fff;
+    border-color: #00308F;
+  }
+  
+  .btn-outline-primary {
+    color: #0044cc;
+    border-color: #0044cc;
+  }
+  
+  .btn-outline-primary:hover,
+  .btn-outline-primary:focus,
+  .btn-outline-primary:active,
+  .btn-outline-primary.active,
+  .open .dropdown-toggle.btn-outline-primary {
+    background-color: #00308F;
+    color: #fff;
+    border-color: #00308F;
   }
 }
