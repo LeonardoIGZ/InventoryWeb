@@ -7,20 +7,6 @@ header{
   background-color: #A7A9AC;
 }
 
-/*.bi-check-lg::before{
-  color: darkgreen !important;
-  font-size: 1.5rem;
-}*/
-
-/*
-.border-free {
-  border-color: #A7A9AC!important;
-}
-
-.border-empresarial {
-  border-color: #011931!important;
-}*/
-
 .card-empresarial{
   background-color: #011931;
 }
@@ -51,5 +37,14 @@ header{
 
 #recomendation{
   padding: 0;
-  background-color: darkgreen;
+  background-color: rgb(39, 168, 39);
+}
+
+.text-success{
+  color: rgb(39, 168, 39)!important;
+}
+
+.table-active {
+  --bs-table-accent-bg: #0040BC;
+  color: #0040BC;
 }

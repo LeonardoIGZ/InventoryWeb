@@ -15,90 +15,63 @@
     <link rel="stylesheet" href="Css/styles.css">
     <link rel="stylesheet" href="Css/style-pricing.css">
     <link rel="stylesheet" href="Css/Contacto.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div
-    style="background-image:url(Images/layered-waves-haikei\ \(2\).svg); background-size: cover; background-position: center;">
+    <div class="startView">
         <header>
-            <div
-                class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pt-3">
-                <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                    <h2 class="m-0 fw-bold" style="color: #FFFFFF;"><img src="Images/northwindLogoUnico.png" width="25em" height="25em" class="pb-1"> Northwind</h2>
-                </a>
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#caracteristicas2" class="nav-link px-2 link-light">Caracteristicas</a></li>
-                    <li><a href="#pricing" class="nav-link px-2 link-light">Planes y precios</a></li>
-                    <li><a href="#soporte" class="nav-link px-2 link-light">FAQs</a></li>
-                    <li><a href="about.html" class="nav-link px-2 link-light">Empresa</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-outline-primary me-2">Registrate</button>
-                    <button type="button" class="btn btn-primary">Inicia sesión</button>
-                </div>
-
-            </div>
-
-            <div id="inicio">
-                <div class="container col-xxl-8 px-4 py-3">
-                    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                        <div class="col-10 col-sm-8 col-lg-6">
-                            <img src="Images/Ecommerce campaign-amico.png" class="d-block mx-lg-auto img-fluid"
-                                alt="Bootstrap Themes" width="1000" height="800" loading="lazy">
-                        </div>
-                        <div class="col-lg-6">
-                            <h1 class="display-5 fw-bold lh-1 mb-3">Solucion perfecta para gestionar tu inventario</h1>
-                            <p class="lead">Te brindamos control total, realizando un seguimiento preciso a tus
-                                existencias
-                            </p>
-                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                                <button type="button" class="btn btn-warning btn-lg px-4 me-md-2">Prueba gratis</button>
-                                <button type="button" class="btn btn-light btn-lg px-4">Descubre más</button>
-                            </div>
-                        </div>
+            <nav class="navbar navbar-dark navbar-expand-md bg-faded  d-flex justify-content-center">
+                <div class="container-fluid">
+                    <a href="/" class="navbar-brand d-flex align-items-center w-50 me-auto fw-bold"><img
+                            src="Images/northwindLogoUnico.png" width="25rem" height="25em" class="me-1"> Northwind</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsingNavbar3">
+                        <i class="fa-solid fa-bars m-2" style="color: #0055FF;"></i>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                        <ul class="navbar-nav w-100 justify-content-center">
+                            <li class="nav-item"><a href="#caracteristicas2" class="nav-link">Caracteristicas</a></li>
+                            <li class="nav-item"><a href="#pricing" class="nav-link ">Planes </a></li>
+                            <li class="nav-item"><a href="#soporte" class="nav-link ">FAQs</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link ">Empresa</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+                            <button type="button"
+                                class="btn btn-outline-primary me-md-2 mb-1 mb-lg-0">Registrate</button>
+                            <button type="button" class="btn btn-primary">Inicia sesión</button>
+                        </ul>
                     </div>
                 </div>
-            </div>
-
+            </nav>
         </header>
-    </div>
-
-    <main>
-        <div id="caracteristicas2">
-            <div class="d-flex flex-equal w-100 my-md-3 ps-md-3 flex-column flex-md-row">
-                <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-dark overflow-hidden"
-                    style="background-color: #FFFFFF;">
-                    <div class="my-3 p-3 ">
-                        <h2 class="display-5 fw-bold">Unifique todo su inventario</h2>
-                        <p class="lead">Sincroniza tus pedidos de todos tus canales de venta, incluyendo Shopify,
-                            Amazon,
-                            eBay y más de 21 integraciones.</p>
+        <div id="inicio">
+            <div class="container col-xxl-8 overflow-hidden">
+                <div class="row flex-sm-row align-items-center g-5 py-5">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="display-4 fw-bold lh-1 mb-3">Balancea estabilidad con agilidad</h1>
+                        <p class="lead">Te brindamos control total, realizando un seguimiento preciso a tus
+                            existencias
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-warning btn-lg px-4 me-md-2">Prueba gratis</button>
+                            <a class="btn btn-light btn-lg px-4" href="#caracteristicas2">Descubre
+                                más</a>
+                        </div>
                     </div>
-                    <div class=" mx-3 pb-5" style="width: 90%; height: 100%; border-radius: 21px 21px 0 0;">
-                        <img src="Images/pickawood-6tAIO3pxde4-unsplash.jpg" alt="" width="100%"
-                            style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
-                    </div>
-                </div>
-                <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden"
-                    style="background-color: #0055FF;">
-                    <div class="my-3 py-3">
-                        <h2 class="display-5 fw-bold">Cumpla con todos los pedidos</h2>
-                        <p class="lead">Acelere sus pedidos con escáneres digitales de picking optimizados, cuadros de
-                            mando
-                            y automatizaciones inteligentes.</p>
-                    </div>
-                    <div class=" mx-3 pb-5" style="width: 90%; height: 100%; border-radius: 21px 21px 0 0;">
-                        <img src="Images/remy-gieling-qqtE2yX7POI-unsplash.jpg" alt="" width="100%"
-                            style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">
+                    <div class="col-12 col-lg-6" data-aos="zoom-in-left">
+                        <img src="Images/Design stats-amico.svg" class="d-block mx-sm-auto img-fluid" height="800"
+                            loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div id="carateristicas" style="background-color: #d3e0ef; background-image: url(Images/wave-haikei.svg); background-size: cover; background-position: center;">
+    <main>
+        <div id="carateristicas"
+            style="background-color: #d3e0ef; background-image: url(Images/alt2.svg); background-size: cover; background-position: center;">
             <div class="container px-4 pt-5" id="hanging-icons">
                 <h2 class="display-5 pb-1" style="color: #011931;">Soluciones a su medida</h2>
                 <div class="row g-4 pt-5 row-cols-1 row-cols-lg-3 text-dark">
@@ -135,8 +108,39 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center">
-                    <img src="Images/Mesa de trabajo2.png" alt="" width="80%">
+                <div class="d-flex justify-content-center" data-aos="fade-up">
+                    <img src="Images/Mesa de trabajo2.png" class="d-block mx-sm-auto img-fluid" alt="" width="90%">
+                </div>
+            </div>
+        </div>
+        <div id="caracteristicas2" class="overflow-hidden">
+            <div class="d-flex flex-equal flex-column flex-md-row w-100 ">
+                <div class="text-center text-dark pt-3 pt-md-5 px-3 px-md-5 overflow-hidden" data-aos="fade-down-right"
+                    style="background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);">
+                    <div class="my-3 p-3">
+                        <h2 class="display-5 fw-bold">Unifique todo su inventario</h2>
+                        <p class="lead">Sincroniza tus pedidos de todos tus canales de venta, incluyendo Shopify,
+                            Amazon,
+                            eBay y más de 21 integraciones.</p>
+                    </div>
+                    <div class=" mx-3 pb-5">
+                        <img src="Images/pickawood-6tAIO3pxde4-unsplash.jpg" class="d-block mx-sm-auto img-fluid" alt=""
+                            width="100%" style="box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;">
+                    </div>
+                </div>
+                <div class="text-center text-white pt-3 pt-md-5 px-3 px-md-5 overflow-hidden"
+                    style="background-image: linear-gradient(to top, #0a84fe 0%, #495aff 100%);"
+                    data-aos="fade-down-left">
+                    <div class="my-3 py-3">
+                        <h2 class="display-5 fw-bold">Cumpla con todos los pedidos</h2>
+                        <p class="lead">Acelere sus pedidos con escáneres digitales de picking optimizados, cuadros de
+                            mando
+                            y automatizaciones inteligentes.</p>
+                    </div>
+                    <div class=" mx-3 pb-5">
+                        <img src="Images/remy-gieling-qqtE2yX7POI-unsplash.jpg" class="d-block mx-sm-auto img-fluid"
+                            alt="" width="100%" style="box-shadow: #11007288 0px 5px 15px;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +152,7 @@
 
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-4 mb-4 text-center align-items-end">
-                    <div class="col p-4 px-md-3">
+                    <div class="col p-4 px-md-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-free py-3">
                                 <h4 class="my-0 fw-normal text-dark">Gratuito</h4>
@@ -165,7 +169,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col p-4 px-md-3">
+                    <div class="col p-4 px-md-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-free py-3 card-header-basic">
                                 <h4 class="my-0 fw-normal text-d3e0">Básico</h4>
@@ -184,7 +188,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col p-4 px-md-3">
+                    <div class="col p-4 px-md-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-header-avanzado" id="recomendation">Recomendado</div>
                             <div class="card-header card-free py-3 card-header-avanzado">
@@ -204,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col p-4 px-md-3">
+                    <div class="col p-4 px-md-3" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="card mb-4 rounded-3 shadow-sm border-free">
                             <div class="card-header card-free py-3 card-header-pro">
                                 <h4 class="my-0 fw-normal">Profesional</h4>
@@ -311,12 +315,13 @@
             </div>
         </div>
 
-        <div id="soporte" style="background-color: #0055FF; background-image: url(Images/blob-haikei.svg); background-size: cover; background-position: center;" >
+        <div id="soporte"
+            style="background-color: #0055FF; background-image: url(Images/blob-haikei.svg); background-size: cover; background-position: center;">
             <div class="container px-4 py-5" id="hanging-icons">
                 <h1 class="pb-1 display-5 text-center" style="color: #ffffff;">Preguntas frecuentes</h1>
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <div class="d-flex justify-content-center pt-2 pb-5">
+                        <div class="d-flex justify-content-center pt-2 pb-5" data-aos="zoom-in">
                             <img src="Images/Questions-amico.svg" alt="" width="90%">
                         </div>
                     </div>
@@ -476,51 +481,78 @@
             </div>
         </div>
 
-        <div id="soporte2" style="background-color: #0055FF; background-image: url(Images/layered-waves-soporte2.svg); background-size: cover; background-position: center;">
+        <div id="soporte2">
             <div class="container px-4 pt-5" id="hanging-icons">
-                <h2 class="display-5 pb-1 text-center" style="color: #011931;">Temas Populares</h2>
+                <h2 class="display-5 pb-1 ">Temas Populares</h2>
                 <div class="row g-4 mt-2 row-cols-1 row-cols-lg-3 text-dark p-3 bg-light mb-5 mx-2 border rounded">
-                    
-                    <div class=" col d-flex align-items-start">
+                    <div class="col d-flex align-items-start">
                         <div>
-                            <a href=""><h5 class="pb-3">¿Cómo instalo el programa?</h5></a>
-                            <a href=""><h5 class="pb-3 pt-3">¿Cómo recupero la base de datos?</a>
-                            <a href=""><h5 class="pb-3 pt-4">¿Cómo creo la base de datos?</a>
+                            <a href="">
+                                <h5 class="pb-3">¿Cómo instalo el programa?</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="pb-3 pt-3">¿Cómo recupero la base de datos?
+                            </a>
+                            <a href="">
+                                <h5 class="pb-3 pt-4">¿Cómo creo la base de datos?
+                            </a>
                         </div>
                     </div>
                     <div class="col d-flex align-items-start">
                         <div>
-                            <a href=""><h5 class="pb-3">¿Cómo inserto mis productos?</h5></a>
-                            <a href=""><h5 class="pb-3 pt-3">¿Cómo se actualiza el inventario?</h5></a>
-                            <a href=""><h5 class="pb-3 pt-3">¿Cómo se editan los productos en el inventario?</h5></a>
+                            <a href="">
+                                <h5 class="pb-3">¿Cómo inserto mis productos?</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="pb-3 pt-3">¿Cómo se actualiza el inventario?</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="pb-3 pt-3">¿Cómo se editan los productos en el inventario?</h5>
+                            </a>
                         </div>
                     </div>
                     <div class="col d-flex align-items-start">
                         <div>
-                            <a href=""><h5 class="pb-3">¿Cómo elimino productos?</h5></a>
-                            <a href=""><h5 class="pb-3 pt-3">¿Cómo hago una copia de seguridad?</h5></a>
-                            <a href=""><h5 class="pb-3 pt-3">¿Cúales son los métodos de pago?</h5></a>
+                            <a href="">
+                                <h5 class="pb-3">¿Cómo elimino productos?</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="pb-3 pt-3">¿Cómo hago una copia de seguridad?</h5>
+                            </a>
+                            <a href="">
+                                <h5 class="pb-3 pt-3">¿Cúales son los métodos de pago?</h5>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="Cuestionario" style="background-color: #0055FF; background-image: url(Images/layered-waves-soporte2.svg); background-size: cover; background-position: bottom;">
-            <div class="container px-4 pt-5" id="hanging-icons">
-                <h2 class="display-5 pb-1 text-center" style="color: #011931;">Reporta un problema</h2>
-                <div class="row g-2 pt-5 pb-5 text-dark">
-                    <h5>Nombre</h5>
-                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre de quien hace el reporte">
-                    <h5>Empresa</h5>
-                    <input type="text" class="form-control" id="Nombre" placeholder="Nombre de la empresa">
-                    <h5>Correo</h5>
-                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="e-mail">
-                    <h5>Modulo</h5>
-                    <input type="text" class="form-control" id="Nombre" placeholder="sección donde encontro la falla">
-                    <h5>Descripción del problema</h5>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                    <button type="button" class="btn btn-light btn-lg">Enviar</button>
+        <div id="Cuestionario" style="background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);">
+            <div class="container px-4 pt-5 text-white" id="hanging-icons">
+                <h2 class="display-5 text-center">Reporta un problema</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row g-2 pt-3 pb-5">
+                            <h5>Nombre</h5>
+                            <input type="text" class="form-control" id="Nombre" placeholder="Nombre de quien hace el reporte">
+                            <h5>Empresa</h5>
+                            <input type="text" class="form-control" id="Nombre" placeholder="Nombre de la empresa">
+                            <h5>Correo</h5>
+                            <input type="email" class="form-control" id="Email" aria-describedby="emailHelp"
+                                placeholder="e-mail">
+                            <h5>Modulo</h5>
+                            <input type="text" class="form-control" id="Nombre" placeholder="sección donde encontro la falla">
+                            <h5>Descripción del problema</h5>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                            <button type="button" class="btn btn-outline-light btn-lg">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center align-items-center pt-2 pb-5" data-aos="zoom-in">
+                            <img src="Images/Callcenter-amico.svg" alt="" class="image-fluid" width="90%">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -540,69 +572,51 @@
                     <div class="container p-0 pb-0">
                         <!-- Section: Social media -->
                         <section class="mb-1">
-                        <!-- Facebook -->
-                        <a
-                            class="btn btn-primary btn-floating m-1"
-                            style="background-color: #3b5998;"
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-facebook-f"></i
-                        ></a>
-                    
-                        <!-- Twitter -->
-                        <a
-                            class="btn btn-primary btn-floating m-1"
-                            style="background-color: #55acee;"
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-twitter"></i
-                        ></a>
-                    
-                        <!-- Google -->
-                        <a
-                            class="btn btn-primary btn-floating m-1"
-                            style="background-color: #dd4b39;"
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-google"></i
-                        ></a>
-                    
-                        <!-- Instagram -->
-                        <a
-                            class="btn btn-primary btn-floating m-1"
-                            style="background-color: #ac2bac;"
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-instagram"></i
-                        ></a>
-                    
-                        <!-- Github -->
-                        <a
-                            class="btn btn-primary btn-floating m-1"
-                            style="background-color: #333333;"
-                            href="#!"
-                            role="button"
-                            ><i class="fab fa-github"></i
-                        ></a>
+                            <!-- Facebook -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
+                                role="button"><i class="fab fa-facebook-f"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
+                                role="button"><i class="fab fa-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
+                                role="button"><i class="fab fa-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
+                                role="button"><i class="fab fa-instagram"></i></a>
+
+                            <!-- Github -->
+                            <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
+                                role="button"><i class="fab fa-github"></i></a>
                         </section>
                         <!-- Section: Social media -->
                     </div>
                 </div>
             </div>
         </div>
-    
+
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2022 Copyright:
-        <a class="text-dark" href="">northwind.com.mx</a>
+            © 2022 Copyright:
+            <a class="text-dark" href="">northwind.com.mx</a>
         </div>
     </footer>
 
-    <!--Bootstrap-->
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <!--FontAwesome-->
+
+    <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/37647f28b4.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
