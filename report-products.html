@@ -12,12 +12,24 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="Css/transactions.css">
     <link rel="stylesheet" href="Css/style-items.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <title>Movimientos</title>
 </head>
 
 <body>
-
+    <div class="loader">
+        
+        <div class="cont">
+            <img src="Images/northwindLogoUnico 1 copia.png" alt="" srcset="" class="img-logo-L">
+            <img src="Images/northwindLogoUnico 2.png" alt="" srcset="" class="img-logo-C">
+            <img src="Images/northwindLogoUnico 3 copia.png" alt="" srcset="" class="img-logo-R">
+            <h1 class="text-logo">Northwind</h1>
+            <div class="line"></div>
+        </div>
+        
+    </div>
     <div class="d-flex ">
         <div class="sidebar-container sidebar-color d-none d-md-block">
             <div class="logo">
@@ -82,12 +94,12 @@
                     </div>
                 </section>
                 <div style="background-color: #0055FF;">
-                    <div class="py-3 my-5 bg-light mx-5 px-3">
-                        <div class="container">
-                            <div class="my-5">
+                    <div class="py-3 my-5 bg-light mx-5 px-3" style="background-color: #FFFFFF!important;">
+                        <div class="container" >
+                            <div class="my-5" >
                                 <form class="row g-3">
                                     <div class="col-md-3">
-                                        <label class="form-label" for="productSelect">Preference</label>
+                                        <label class="form-label" for="productSelect">Producto</label>
                                         <select class="form-select" id="productSelect" required>
                                             <option selected>Elegir...</option>
                                             <option value="1">Chai</option>
@@ -115,8 +127,8 @@
                                     </div>
                                 </form>
                             </div>
-                            <div id="columnchart_material" style="width: 800px; height: 500px;"></div>
-                            <div id="table_div" style="width: 800px; height: 500px;"></div>
+                            <div id="columnchart_material" style="height: 600px;"></div>
+                            <div id="table_div" ></div>
                         </div>
                     </div>
                 </div>
