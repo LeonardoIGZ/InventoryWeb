@@ -6,7 +6,7 @@ function drawChart() {
     var fechaInicio = document.getElementById("inputInicio").value;
     var fechaLimite = document.getElementById("inputLimite").value;
 
-    fetch("https://localhost:7210/api/Movements/comportamientoproducto?productid="+productid+"&fechaInicio="+fechaInicio+"&fechaLimite="+fechaLimite, { method: 'get' })
+    fetch("https://localhost:7295/api/Movements/comportamientoproducto?productid="+productid+"&fechaInicio="+fechaInicio+"&fechaLimite="+fechaLimite, { method: 'get' })
         .then(response => response.json())
         .then(json => {
             console.log(json);
