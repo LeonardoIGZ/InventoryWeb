@@ -66,3 +66,14 @@ body {
     height: 100vh;
     padding-bottom: 5rem;
 }
+
+.chart{
+    height: 300px;
+}
+
+@media (max-width: 600px) {
+    .chart{
+        width: auto;
+        height: 75%;
+    }
+}
