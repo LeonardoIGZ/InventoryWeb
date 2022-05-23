@@ -2,17 +2,17 @@ $(document).ready(function () {
     $('#products').DataTable({
         columns: [
             { data: 'id' },
-            { data: 'product', responsivePriority: '1'},
+            { data: 'product', responsivePriority: '1' },
             { data: 'category' },
             { data: 'stock' },
-            { data: 'warehouse1'},
-            { data: 'warehouse2'},
-            { data: 'warehouse3'},
+            { data: 'warehouse1' },
+            { data: 'warehouse2' },
+            { data: 'warehouse3' },
             { data: 'level' },
-            { data: 'action', orderable: false}
+            { data: 'action', orderable: false }
         ],
         "createdRow": function (row, data, dataIndex) {
-            if (parseInt(data.level,10) > parseInt(data.stock,10)) {
+            if (parseInt(data.level, 10) > parseInt(data.stock, 10)) {
                 $(row).addClass("bg-danger bg-opacity-25");
             }
         },
