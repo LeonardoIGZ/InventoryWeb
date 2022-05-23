@@ -7,19 +7,18 @@ function drawChart() {
         .then(json => {
 
             let category = "";
+            let lastCategory = "";
             let cont = 0;
             let sum = 0;
             let dataArray = [];
 
-            for (var i = 0; i < json.length; i++)
-            {
-                if (json[i].category != category)
-                {
-                    if (i != 0)
-                    {
+            for (var i = 0; i < json.length; i++) {
+                if (json[i].category != category) {
+                    if (i != 0) {
+                        lastCategory = category;
                         category = json[i].category;
                         var obj = {
-                            category: category,
+                            category: lastCategory,
                             total: sum
                         };
                         dataArray.push(obj);
@@ -32,10 +31,17 @@ function drawChart() {
                     sum = json[i].quantity1;
                     continue;
                 }
-                if (cont < 5)
-                {
+                if (cont < 5) {
                     cont++;
                     sum += json[i].quantity1;
+                }
+                if (cont == 5 && i == json.length-1){
+                    cont = 0;
+                    var obj = {
+                        category: category,
+                        total: sum
+                    };
+                    dataArray.push(obj);
                 }
             }
             var data = new google.visualization.DataTable();
