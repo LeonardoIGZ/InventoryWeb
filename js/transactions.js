@@ -36,3 +36,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Your code to run since DOM is loaded and ready
 });
+
+$(window).on("load", function () {
+    $(".loader").fadeOut("slow");
+})
