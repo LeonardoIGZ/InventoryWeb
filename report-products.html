@@ -20,7 +20,7 @@
 
 <body>
     <div class="loader">
-        
+
         <div class="cont">
             <img src="Images/northwindLogoUnico 1 copia.png" alt="" srcset="" class="img-logo-L">
             <img src="Images/northwindLogoUnico 2.png" alt="" srcset="" class="img-logo-C">
@@ -28,13 +28,13 @@
             <h1 class="text-logo">Northwind</h1>
             <div class="line"></div>
         </div>
-        
+
     </div>
     <div class="d-flex ">
         <div class="sidebar-container sidebar-color d-none d-md-block">
             <div class="logo">
-                <h2 class="m-0 fw-bold" style="color: #FFFFFF;"><img src="Images/northwindLogoUnico.png" width="25em"
-                        height="25em" class="pb-1"> Northwind</h2>
+                <a href="index.html" class="text-decoration-none"><h2 class="m-0 fw-bold" style="color: #FFFFFF;"><img src="Images/northwindLogoUnico.png" width="25em"
+                        height="25em" class="pb-1"> Northwind</h2></a>
             </div>
             <div class="menu">
                 <a href="" class="d-block p-3 text-white active"><i class="fa-solid fa-people-group me-2 lead"></i>
@@ -95,8 +95,8 @@
                 </section>
                 <div style="background-color: #0055FF;">
                     <div class="py-3 my-5 bg-light mx-5 px-3" style="background-color: #FFFFFF!important;">
-                        <div class="container" >
-                            <div class="my-5" >
+                        <div class="container">
+                            <div class="my-5">
                                 <form class="row g-3">
                                     <div class="col-md-3">
                                         <label class="form-label" for="productSelect">Producto</label>
@@ -127,8 +127,15 @@
                                     </div>
                                 </form>
                             </div>
-                            <div id="columnchart_material" style="height: 600px;"></div>
-                            <div id="table_div" ></div>
+                            <div></div>
+
+                            <div id="dashboard_div">
+                                <!--Divs that will hold each control and chart-->
+                                <div id="filter_div"></div>
+                                <div id="chart_div" style="height: 600px;"></div>
+                                <div id="columnchart_material" style="height: 600px;"></div>
+                                <div id="table_div"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
