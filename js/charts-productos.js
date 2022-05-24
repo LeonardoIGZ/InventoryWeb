@@ -1,4 +1,4 @@
-google.charts.load('current', { packages: ['corechart', 'bar', 'table'] });
+google.charts.load('current', { packages: ['corechart', 'bar', 'table', 'controls', 'gauge'] });
 //google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
@@ -6,10 +6,36 @@ function drawChart() {
     var fechaInicio = document.getElementById("inputInicio").value;
     var fechaLimite = document.getElementById("inputLimite").value;
 
-    fetch("https://localhost:7295/api/Movements/comportamientoproducto?productid="+productid+"&fechaInicio="+fechaInicio+"&fechaLimite="+fechaLimite, { method: 'get' })
+    fetch("https://localhost:7295/api/Movements/comportamientoproducto?productid=" + productid + "&fechaInicio=" + fechaInicio + "&fechaLimite=" + fechaLimite, { method: 'get' })
         .then(response => response.json())
         .then(json => {
             console.log(json);
+
+            var dashboard = new google.visualization.Dashboard(
+                document.getElementById("dashboard_div"));
+
+            var yearSlider = new google.visualization.ControlWrapper({
+                'controlType': 'NumberRangeFilter',
+                'containerId': 'filter_div',
+                'options': {
+                    'filterColumnIndex': 2,
+                    'ui': {
+                        'labelStacking': 'vertical',
+                        'label': 'Año'
+                    }
+                }
+            });
+
+            var pieChart = new google.visualization.ChartWrapper({
+                'chartType': 'PieChart',
+                'containerId': 'chart_div',
+                'options': {
+                    'pieSliceText': 'value',
+                    'legend': 'right'
+                },
+                'view': {'columns':[1,3]}
+            });
+
             var data = new google.visualization.DataTable();
             var data2 = new google.visualization.DataTable();
 
@@ -78,7 +104,6 @@ function drawChart() {
                     title: 'Comportamiento de un producto en el periodo: ' + fechaInicio + ' hasta ' + fechaLimite
                 }
             };
-
             var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
             chart.draw(data, options);
 
@@ -90,6 +115,10 @@ function drawChart() {
 
             var chart = new google.visualization.PieChart(document.getElementById('piechart'));
             chart.draw(data, options);*/
+            dashboard.bind(yearSlider, pieChart);
+
+            // Draw the dashboard.
+            dashboard.draw(data2);
         })
         .catch(error => console.error());
 
